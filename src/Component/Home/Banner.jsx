@@ -7,11 +7,35 @@ import { useEffect } from 'react';
 
 
 
+
 const Banner = () => {
   useEffect(()=>{
     Aos.init({duration: 1000});
   },[])
- 
+
+
+  const handleDownload = () => {
+    const pdfFileName = "resume";
+    const pdfFilePath =  '/public/assignment.2.pdf';
+  
+    const link = document.createElement('a');
+    link.href = pdfFilePath;
+    link.download = pdfFileName;
+    document.body.appendChild(link);
+  
+    link.click();
+  
+    // Remove the link from the DOM after a short delay
+    setTimeout(() => {
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(link.href);
+    }, 1000);
+
+    console.log('pdfFileName:', pdfFileName);
+console.log('pdfFilePath:', pdfFilePath);
+  };
+
+
 
     return (
         <div name="home">
@@ -39,9 +63,12 @@ const Banner = () => {
       <div>
       
       <div className='btn'>
+      <button onClick={handleDownload}>
+        Download PDF
+      </button>
 
-      <a href="../../assets/assignment.2.pdf" download >Resume<span className="hover:rotate-90 duration-300"><FaArrowCircleDown></FaArrowCircleDown></span> 
-            </a>
+      {/* <a href="../../assets/assignment.2.pdf" download>Resume<span className="hover:rotate-90 duration-300"><FaArrowCircleDown></FaArrowCircleDown></span> 
+            </a> */}
       </div>
       </div>
     </div>

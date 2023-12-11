@@ -1,17 +1,24 @@
-import { FaArrowCircleDown, FaArrowCircleRight, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import img from '../../assets/profile.jpeg'
+import { FaArrowCircleDown, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import img from '../../assets/profile.jpeg';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 
 
 
 const Banner = () => {
+  useEffect(()=>{
+    Aos.init({duration: 1000});
+  },[])
  
 
     return (
         <div name="home">
             <div className="hero min-h-screen bg-gradient-to-r from-indigo-500">
   <div className="hero-content flex-col lg:flex-row-reverse">
-  <img className="mask mask-hexagon-2 w-[350px] h-[500px] object-cover" src={img}  />
-    <div>
+  <img className="mask mask-hexagon-2 w-[350px] h-[500px] object-cover" data-aos="fade-down" src={img}  />
+    <div data-aos="fade-up">
     <h1 className='font-bold text-2xl  md:text-4xl text-blue-900'>
               I'm Maliha Sultana,
               
@@ -33,7 +40,7 @@ const Banner = () => {
       
       <div className='btn'>
 
-      <a href="/portfolio.pdf" download >Resume<span className="hover:rotate-90 duration-300"><FaArrowCircleDown></FaArrowCircleDown></span> 
+      <a href="../../assets/assignment.2.pdf" download >Resume<span className="hover:rotate-90 duration-300"><FaArrowCircleDown></FaArrowCircleDown></span> 
             </a>
       </div>
       </div>

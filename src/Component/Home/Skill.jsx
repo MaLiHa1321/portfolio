@@ -7,18 +7,25 @@ import img6 from '../../assets/react.png'
 import img7 from '../../assets/node.png'
 import img8 from '../../assets/express.png'
 import img9 from '../../assets/mongo.jpeg'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Skill = () => {
+
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+      },[])
 
     return (
         <div name="skill" className='w-10/12 mx-auto mt-12'>
 
         <div className='flex flex-col md:flex-row justify-center items-center'>
-            <div className='flex-1'>
+            <div className='flex-1' data-aos="fade-down">
                 <h2 className="text-2xl font-bold text-blue-500 md:text-4xl mb-3">My Skill</h2>
                 <p className='text-lg'>I have experience with these things.</p>
             </div>
-            <div className='flex-1'>
+            <div className='flex-1' data-aos="fade-up">
 
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8'>
                 <div className='shadow-2xl p-4 hover:border-2 hover:border-blue-600'>

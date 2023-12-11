@@ -1,7 +1,13 @@
 import { FaSchool, FaUniversity } from "react-icons/fa";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 
 const Academic = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+      },[])
     return (
         <div name="academic">
             <div className="w-10/12 mx-auto mt-12">
@@ -9,7 +15,7 @@ const Academic = () => {
                 <p className="text-base mb-3 mt-4">Checkout my academic information</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
-                  <div className="card w-78 border-2 border-gray-400 shadow-2xl">
+                  <div className="card w-78 border-2 border-gray-400 shadow-2xl" data-aos="zoom-out-up">
   <div className="card-body">
     <h2 className="flex justify-center"><FaUniversity size={30}></FaUniversity></h2>
     <h2 className="card-title">Bechelor of Science</h2>
@@ -19,7 +25,7 @@ const Academic = () => {
   </div>
 
                     </div>
-                  <div className="card w-78 border-2 border-gray-400 shadow-2xl">
+                  <div className="card w-78 border-2 border-gray-400 shadow-2xl" data-aos="zoom-out-down">
   <div className="card-body">
   <h2 className="flex justify-center"><FaSchool size={30}></FaSchool></h2>
     <h2 className="card-title">H.S.C</h2>
@@ -30,7 +36,7 @@ const Academic = () => {
   </div>
 
                     </div>
-                    <div className="card w-78 border-2 border-gray-400 shadow-2xl">
+                    <div className="card w-78 border-2 border-gray-400 shadow-2xl" data-aos="zoom-out-up">
   <div className="card-body">
   <h2 className="flex justify-center"><FaSchool size={30}></FaSchool></h2>
     <h2 className="card-title">S.S.C</h2>

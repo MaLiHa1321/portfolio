@@ -2,8 +2,15 @@
 import img10 from '../../assets/event.png'
 import img11 from '../../assets/library.png'
 import img12 from '../../assets/invent.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Project = () => {
+
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+      },[])
     return (
         <div name="project" className="w-10/12 mx-auto mt-12">
         
@@ -13,7 +20,7 @@ const Project = () => {
                     <p className='text-base mb-12'>Check out some of my recent work right here....</p>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 '>
-                <div className="card w-78 bg-base-100 shadow-2xl hover:bg-gradient-to-r from-indigo-500">
+                <div className="card w-78 bg-base-100 shadow-2xl hover:bg-gradient-to-r from-indigo-500" data-aos="flip-left">
   <figure><img src={img10} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
@@ -28,7 +35,7 @@ const Project = () => {
   </div>
 </div>
                
-                <div className="card w-78 bg-base-100 shadow-2xl  hover:bg-gradient-to-r from-indigo-500">
+                <div className="card w-78 bg-base-100 shadow-2xl  hover:bg-gradient-to-r from-indigo-500" data-aos="flip-right">
   <figure><img src={img11} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
@@ -42,7 +49,7 @@ const Project = () => {
     </div>
   </div>
 </div>
-                <div className="card w-78 bg-base-100 shadow-2xl hover:bg-gradient-to-r from-indigo-500">
+                <div className="card w-78 bg-base-100 shadow-2xl hover:bg-gradient-to-r from-indigo-500" data-aos="flip-left">
   <figure><img src={img12} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">

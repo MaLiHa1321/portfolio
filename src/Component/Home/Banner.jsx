@@ -54,7 +54,7 @@ console.log('pdfFilePath:', pdfFilePath);
            <li className='list-none'><a href="https://www.linkedin.com/in/maliha-sultana-2175a7263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'><FaLinkedinIn></FaLinkedinIn></a></li>
          </div>
          <div className='w-10 bg-gray-300 p-4 rounded-full text-black hover:bg-blue-600 hover:text-white'>
-           <li className='list-none'><a href=""><FaFacebook></FaFacebook></a></li>
+           <li className='list-none'><a href="https://www.facebook.com/profile.php?id=100085430847888" target='blank'><FaFacebook></FaFacebook></a></li>
          </div>
          <div className='w-10 bg-gray-300 p-4 rounded-full text-black hover:bg-blue-600 hover:text-white'>
            <li className='list-none'><a href="https://github.com/MaLiHa1321" target='blank'><FaGithub></FaGithub></a></li>
@@ -63,12 +63,10 @@ console.log('pdfFilePath:', pdfFilePath);
       <div>
       
       <div className='btn'>
-      <button onClick={handleDownload}>
-        Download PDF
+      <button onClick={handleDownload} className="flex items-center">
+      Download Resume<FaArrowCircleDown  className="ml-2 text-blue-700" size={20}></FaArrowCircleDown>
       </button>
 
-      {/* <a href="../../assets/assignment.2.pdf" download>Resume<span className="hover:rotate-90 duration-300"><FaArrowCircleDown></FaArrowCircleDown></span> 
-            </a> */}
       </div>
       </div>
     </div>

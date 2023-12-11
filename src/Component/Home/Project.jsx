@@ -15,7 +15,7 @@ const Project = () => {
         <div name="project" className="w-10/12 mx-auto mt-12">
         
 
-                <div>
+                <div data-aos="fade-down">
                     <h2 className="text-2xl md:text-4xl text-blue-600 font-bold mb-2">Project</h2>
                     <p className='text-base mb-12'>Check out some of my recent work right here....</p>
                 </div>
@@ -45,7 +45,7 @@ const Project = () => {
     <p>This system is designed to streamline and enhance the user experience in managing and exploring the library's book collection.</p>
     <div className="card-actions justify-end">
      <a href="https://library-management-7f05c.web.app" target='blank'><div className="badge badge-outline badge-secondary">Demo</div> </a>
-      <a href="https://github.com/MaLiHa1321/Library-management-system.git"><div className="badge badge-outline badge-warning">Code</div></a>
+      <a href="https://github.com/MaLiHa1321/Library-management-system.git" target='blank'><div className="badge badge-outline badge-warning">Code</div></a>
     </div>
   </div>
 </div>

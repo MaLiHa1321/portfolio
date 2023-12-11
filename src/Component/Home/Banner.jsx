@@ -16,7 +16,7 @@ const Banner = () => {
 
   const handleDownload = () => {
     const pdfFileName = "resume";
-    const pdfFilePath =  '/public/assignment.2.pdf';
+    const pdfFilePath =  '/dist/assignment.2.pdf';
   
     const link = document.createElement('a');
     link.href = pdfFilePath;

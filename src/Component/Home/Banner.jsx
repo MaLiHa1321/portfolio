@@ -5,9 +5,6 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 
 
-
-
-
 const Banner = () => {
   useEffect(()=>{
     Aos.init({duration: 1000});
@@ -16,7 +13,7 @@ const Banner = () => {
 
   const handleDownload = () => {
     const pdfFileName = "resume";
-    const pdfFilePath =  '/dist/assignment.2.pdf';
+    const pdfFilePath = 'https://drive.google.com/file/d/1Vg9QSxwZHz3s5t0N7df-VAAmFHtz5fIC/view?usp=sharing';
   
     const link = document.createElement('a');
     link.href = pdfFilePath;
@@ -62,9 +59,11 @@ console.log('pdfFilePath:', pdfFilePath);
       </div>
       <div>
       
-      <div className='btn'>
-      <button onClick={handleDownload} className="flex items-center">
+      <div className='btn' onClick={handleDownload}>
+      <button className="flex items-center">
       Download Resume<FaArrowCircleDown  className="ml-2 text-blue-700" size={20}></FaArrowCircleDown>
+
+     
       </button>
 
       </div>

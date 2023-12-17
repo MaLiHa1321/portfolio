@@ -13,7 +13,7 @@ const Banner = () => {
 
   const handleDownload = () => {
     const pdfFileName = "resume";
-    const pdfFilePath = 'https://drive.google.com/file/d/1Vg9QSxwZHz3s5t0N7df-VAAmFHtz5fIC/view?usp=sharing';
+    const pdfFilePath = 'https://drive.google.com/file/d/1dymw3iEXyudxbTNIeNppkoX0ed_bHYEn/view?usp=sharing';
   
     const link = document.createElement('a');
     link.href = pdfFilePath;
@@ -28,8 +28,6 @@ const Banner = () => {
       window.URL.revokeObjectURL(link.href);
     }, 1000);
 
-    console.log('pdfFileName:', pdfFileName);
-console.log('pdfFilePath:', pdfFilePath);
   };
 
 

@@ -19,8 +19,8 @@ const Academic = () => {
   <div className="card-body">
     <h2 className="flex justify-center"><FaUniversity size={30}></FaUniversity></h2>
     <h2 className="card-title">Bechelor of Science</h2>
-    <p><span className="font-bold text-base">Status:</span> Running</p>
-    <p> <span className="text-base font-bold">CGPA:</span> 3.92</p>
+    <p><span className="font-bold text-base">Status:</span> Completed</p>
+    <p> <span className="text-base font-bold">CGPA:</span> 3.93</p>
     <p>Department of CSE</p>
     <p>Port City International Uniersity, Chittagong</p>
   </div>
@@ -31,7 +31,7 @@ const Academic = () => {
   <h2 className="flex justify-center"><FaSchool size={30}></FaSchool></h2>
     <h2 className="card-title">H.S.C</h2>
     <p><span className="text-base font-bold">Status:</span> Completed</p>
-    <p> <span className="text-base font-bold">GPA:</span> 4.00</p>
+    <p> <span className="text-base font-bold">GPA:</span> 3.42</p>
     
     <p>Omar Gani M.E.S Collage, Chittagong</p>
   </div>

@@ -43,12 +43,12 @@ const Contact = () => {
 
                 <div className="hero min-h-screen flex items-center justify-center">
   <div className="hero-content flex-col">
-    <div className="card w-full bg-red-100 p-4">
+    <div className="card w-full bg-red-100">
       <form ref={form} onSubmit={sendEmail} className="flex flex-col">
         <label>Name</label>
         <input type="text" name="from_name" className="mb-4 p-3 w-full rounded" />
         <label>Email</label>
-        <input type="email" name="from_email" className="mb-4 p-3 rounded" />
+        <input type="email" name="from_email" className="mb-4 p-3 w-full rounded" />
         <label>Message</label>
         <textarea name="message" className="mb-4 p-5 w-full rounded"></textarea>
         <input type="submit" value="Send" className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-4 rounded" />

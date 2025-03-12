@@ -36,10 +36,10 @@ const Banner = () => {
         <div name="home">
             <div className="hero min-h-screen bg-gradient-to-r from-indigo-500">
   <div className="hero-content flex-col lg:flex-row-reverse">
-  <img className="mask mask-hexagon-2 w-[350px] h-[500px] object-cover" data-aos="fade-down" src={img}  />
+  {/* <img className="mask mask-hexagon-2 w-[350px] h-[500px] object-cover" data-aos="fade-down" src={img}  /> */}
     <div data-aos="fade-up">
     <h1 className='font-bold text-2xl  md:text-4xl text-blue-900'>
-              I'm Maliha Sultana,
+            Hi,  I'm Maliha Sultana,
               
             </h1>
             <h4 className='text-2xl text-green-800'>Front-End Developer</h4>
@@ -49,7 +49,7 @@ const Banner = () => {
            <li className='list-none'><a href="https://www.linkedin.com/in/maliha-sultana-2175a7263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'><FaLinkedinIn></FaLinkedinIn></a></li>
          </div>
          <div className='w-10 bg-gray-300 p-4 rounded-full text-black hover:bg-blue-600 hover:text-white'>
-           <li className='list-none'><a href="https://www.facebook.com/profile.php?id=100085430847888" target='blank'><FaFacebook></FaFacebook></a></li>
+           <li className='list-none'><a href="#" target='blank'><FaFacebook></FaFacebook></a></li>
          </div>
          <div className='w-10 bg-gray-300 p-4 rounded-full text-black hover:bg-blue-600 hover:text-white'>
            <li className='list-none'><a href="https://github.com/MaLiHa1321" target='blank'><FaGithub></FaGithub></a></li>

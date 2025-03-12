@@ -30,7 +30,7 @@ const Project = () => {
     <p>This system is designed to streamline and enhance the process of organizing and managing events, making event planning a seamless experience.</p>
     <div className="card-actions justify-end">
      <a href="https://event-planner-3931c.web.app" target='blank'><div className="badge badge-outline badge-secondary">Demo</div></a>
-      <a href="https://github.com/MaLiHa1321/event-planner.git" target='blank'><div className="badge badge-outline badge-warning">Code</div></a>
+      {/* <a href="https://github.com/MaLiHa1321/event-planner.git" target='blank'><div className="badge badge-outline badge-warning">Code</div></a> */}
     </div>
   </div>
 </div>
@@ -45,7 +45,7 @@ const Project = () => {
     <p>This system is designed to streamline and enhance the user experience in managing and exploring the library's book collection.</p>
     <div className="card-actions justify-end">
      <a href="https://library-management-7f05c.web.app" target='blank'><div className="badge badge-outline badge-secondary">Demo</div> </a>
-      <a href="https://github.com/MaLiHa1321/Library-management-system.git" target='blank'><div className="badge badge-outline badge-warning">Code</div></a>
+      {/* <a href="https://github.com/MaLiHa1321/Library-management-system.git" target='blank'><div className="badge badge-outline badge-warning">Code</div></a> */}
     </div>
   </div>
 </div>
@@ -59,7 +59,7 @@ const Project = () => {
     <p>This system is designed to streamline and enhance the process of facilitates a seamless process for users to create shops, manage products, analyze sales, and provides administrative functionalities for both shop managers and the system administrator..</p>
     <div className="card-actions justify-end">
      <a href="https://inventory-management-pro-5216c.web.app" target='blank'><div className="badge badge-outline badge-secondary">Demo</div> </a>
-     <a href="https://github.com/MaLiHa1321/inventory-management-system.git" target='blank'></a> <div className="badge badge-outline badge-warning">Code</div>
+     {/* <a href="https://github.com/MaLiHa1321/inventory-management-system.git" target='blank'></a> <div className="badge badge-outline badge-warning">Code</div> */}
     </div>
   </div>
 </div>

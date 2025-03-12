@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="grid grid-flow-col gap-4">
           <a href="https://www.linkedin.com/in/maliha-sultana-2175a7263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'><FaLinkedinIn size={30}></FaLinkedinIn></a>
           <a href="https://github.com/MaLiHa1321" target='blank'><FaGithub size={30}></FaGithub></a>
-          <a href="https://www.facebook.com/profile.php?id=100085430847888" target='blank'><FaFacebook size={30}></FaFacebook></a>
+          <a href="#" target='blank'><FaFacebook size={30}></FaFacebook></a>
           </div>
         </nav> 
         <aside>

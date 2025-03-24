@@ -13,7 +13,7 @@ const Banner = () => {
 
   const handleDownload = () => {
     const pdfFileName = "resume";
-    const pdfFilePath = 'https://drive.google.com/file/d/1dymw3iEXyudxbTNIeNppkoX0ed_bHYEn/view?usp=sharing';
+    const pdfFilePath = 'https://drive.google.com/file/d/1i-HuAoHbn2vT_92kea6FlckSZ9upNzTy/view?usp=sharing';
   
     const link = document.createElement('a');
     link.href = pdfFilePath;
